@@ -19,7 +19,7 @@ public class CoinTest {
 		   }
 		   System.out.println("Toss " + ": " + dime.getStatus());
 	   }
-//System.out.println("\nOut of " + numTosses + " tosses,there were " + numHeads + " heads and " + numTails + " tails.");
+System.out.println("\nOut of " + numTosses + " tosses,there were " + numHeads + " heads and " + numTails + " tails.");
 	}
 
 }
