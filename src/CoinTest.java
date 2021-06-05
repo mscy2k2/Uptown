@@ -5,12 +5,12 @@ public class CoinTest {
 	   Coin dime = new Coin();
 	   int numHeads = 0;
 	   int numTails = 0;
-	   int numTosses = 10;
+	   int numTosses = 5;
 	   
 	   System.out.println("Initial coin side facing up: " + dime.getStatus() + "\n");
 	   
 	   for (int currentToss = 1; currentToss <= numTosses; currentToss++) {
-		   dime.toss();
+		   //dime.toss();
 		   if (dime.getStatus() == "heads") {
 			   numHeads += 1;
 		   }
@@ -19,7 +19,8 @@ public class CoinTest {
 		   }
 		   System.out.println("Toss " + ": " + dime.getStatus());
 	   }
-System.out.println("\nOut of " + numTosses + " tosses,there were " + numHeads + " heads and " + numTails + " tails.");
+       
+	   System.out.println("\nOut of " + numTosses + " tosses,there were " + numHeads + " heads and " + numTails + " tails.");
 	}
 
 }

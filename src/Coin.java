@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class Coin {
-   private String status;    // status refers to either heads or tails
+   private String status;    // status refers to either heads or tails, indicating the side of the coin that is facing up.
    
    public void toss() {
 	   Random randGen = new Random();
