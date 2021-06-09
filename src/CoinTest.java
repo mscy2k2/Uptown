@@ -10,7 +10,7 @@ public class CoinTest {
 	   System.out.println("Initial coin side facing up: " + dime.getStatus() + "\n");
 	   
 	   for (int currentToss = 1; currentToss <= numTosses; currentToss++) {
-		   //dime.toss();
+		   dime.toss();
 		   if (dime.getStatus() == "heads") {
 			   numHeads += 1;
 		   }
