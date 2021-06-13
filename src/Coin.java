@@ -7,7 +7,7 @@ public class Coin {
 	   Random randGen = new Random();
 	   int randNum = randGen.nextInt(2);
 	   if (randNum == 0) {
-	      status = "tails";
+	      status = "tails";       //tails
 	   }
 	   else
 		  status = "heads";
