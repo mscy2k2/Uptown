@@ -49,7 +49,7 @@ public class CoinTossScreen extends JFrame {
 		setContentPane(contentPane);
 		
 		cbCoinSelect = new JComboBox();
-		cbCoinSelect.setModel(new DefaultComboBoxModel(new String[] {"Dollarcoin", "Bitcoin", "Eurocoin\t"}));
+		cbCoinSelect.setModel(new DefaultComboBoxModel(new String[] {"Dollarcoin", "Bitcoin", "Eurocoin"}));
 		
 		JLabel lblCoinHead = new JLabel("");
 		lblCoinHead.setIcon(new ImageIcon(CoinTossScreen.class.getResource("/cointoss/image/coinimage128.png")));
@@ -62,23 +62,23 @@ public class CoinTossScreen extends JFrame {
 				if (coin.getStatus().equals("heads")){
 					lblCoinHead.setIcon(new ImageIcon(CoinTossScreen.class.getResource("/cointoss/image/coinimage128.png")));
 			    }
-				if (coin.getStatus().equals("tails")) {
+				else {
 					lblCoinHead.setIcon(new ImageIcon(CoinTossScreen.class.getResource("/cointoss/image/coin-dollar128.png")));
 				}
 			 }
-			 if (cbCoinSelect.getSelectedItem().toString().equals("Bitcoin")) {
+			 else if (cbCoinSelect.getSelectedItem().toString().equals("Bitcoin")) {
 					if (coin.getStatus().equals("heads")){
 						lblCoinHead.setIcon(new ImageIcon(CoinTossScreen.class.getResource("/cointoss/image/bitcoin-128.png")));
 				    }
-					if (coin.getStatus().equals("tails")) {
+					else {
 						lblCoinHead.setIcon(new ImageIcon(CoinTossScreen.class.getResource("/cointoss/image/bit-coin-128.png")));
 					}
 			 }
-			 if (cbCoinSelect.getSelectedItem().toString().equals("Eurocoin")) {
+			 else  {
 					if (coin.getStatus().equals("heads")){
 						lblCoinHead.setIcon(new ImageIcon(CoinTossScreen.class.getResource("/cointoss/image/coineuro-128.png")));
 				    }
-					if (coin.getStatus().equals("tails")) {
+					else {
 						lblCoinHead.setIcon(new ImageIcon(CoinTossScreen.class.getResource("/cointoss/image/coin-euro-128.png")));
 					}
 			 }
